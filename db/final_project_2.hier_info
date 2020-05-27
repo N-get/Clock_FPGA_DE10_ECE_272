@@ -1,0 +1,1267 @@
+|final_project_2
+test <= slower:inst1.clock1Hz
+clock_10MHZ => slower:inst1.clock_10MHZ
+reset => slower:inst1.reset_1
+reset => inst32.IN0
+light_1[0] <= lab_4_1:inst.light[0]
+light_1[1] <= lab_4_1:inst.light[1]
+light_1[2] <= lab_4_1:inst.light[2]
+light_1[3] <= lab_4_1:inst.light[3]
+light_1[4] <= lab_4_1:inst.light[4]
+light_1[5] <= lab_4_1:inst.light[5]
+light_1[6] <= lab_4_1:inst.light[6]
+clock_50 => synchronizer:inst19.clk
+clock_50 => synchronizer:inst18.clk
+clock_50 => synchronizer:inst15.clk
+light_2[0] <= lab_4_1:inst11.light[0]
+light_2[1] <= lab_4_1:inst11.light[1]
+light_2[2] <= lab_4_1:inst11.light[2]
+light_2[3] <= lab_4_1:inst11.light[3]
+light_2[4] <= lab_4_1:inst11.light[4]
+light_2[5] <= lab_4_1:inst11.light[5]
+light_2[6] <= lab_4_1:inst11.light[6]
+light_3[0] <= lab_4_1:inst13.light[0]
+light_3[1] <= lab_4_1:inst13.light[1]
+light_3[2] <= lab_4_1:inst13.light[2]
+light_3[3] <= lab_4_1:inst13.light[3]
+light_3[4] <= lab_4_1:inst13.light[4]
+light_3[5] <= lab_4_1:inst13.light[5]
+light_3[6] <= lab_4_1:inst13.light[6]
+light_4[0] <= lab_4_1:inst14.light[0]
+light_4[1] <= lab_4_1:inst14.light[1]
+light_4[2] <= lab_4_1:inst14.light[2]
+light_4[3] <= lab_4_1:inst14.light[3]
+light_4[4] <= lab_4_1:inst14.light[4]
+light_4[5] <= lab_4_1:inst14.light[5]
+light_4[6] <= lab_4_1:inst14.light[6]
+light_5[0] <= lab_4_1:inst20.light[0]
+light_5[1] <= lab_4_1:inst20.light[1]
+light_5[2] <= lab_4_1:inst20.light[2]
+light_5[3] <= lab_4_1:inst20.light[3]
+light_5[4] <= lab_4_1:inst20.light[4]
+light_5[5] <= lab_4_1:inst20.light[5]
+light_5[6] <= lab_4_1:inst20.light[6]
+light_6[0] <= lab_4_1:inst21.light[0]
+light_6[1] <= lab_4_1:inst21.light[1]
+light_6[2] <= lab_4_1:inst21.light[2]
+light_6[3] <= lab_4_1:inst21.light[3]
+light_6[4] <= lab_4_1:inst21.light[4]
+light_6[5] <= lab_4_1:inst21.light[5]
+light_6[6] <= lab_4_1:inst21.light[6]
+
+
+|final_project_2|slower:inst1
+clock_10MHZ => clock_10MHZ.IN2
+reset_1 => SYNTHESIZED_WIRE_3.IN1
+clock1Hz <= synchronizer:b2v_inst6.q
+
+
+|final_project_2|slower:inst1|comparator_1000:b2v_inst
+a[0] => LessThan0.IN50
+a[1] => LessThan0.IN49
+a[2] => LessThan0.IN48
+a[3] => LessThan0.IN47
+a[4] => LessThan0.IN46
+a[5] => LessThan0.IN45
+a[6] => LessThan0.IN44
+a[7] => LessThan0.IN43
+a[8] => LessThan0.IN42
+a[9] => LessThan0.IN41
+a[10] => LessThan0.IN40
+a[11] => LessThan0.IN39
+a[12] => LessThan0.IN38
+a[13] => LessThan0.IN37
+a[14] => LessThan0.IN36
+a[15] => LessThan0.IN35
+a[16] => LessThan0.IN34
+a[17] => LessThan0.IN33
+a[18] => LessThan0.IN32
+a[19] => LessThan0.IN31
+a[20] => LessThan0.IN30
+a[21] => LessThan0.IN29
+a[22] => LessThan0.IN28
+a[23] => LessThan0.IN27
+a[24] => LessThan0.IN26
+q <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final_project_2|slower:inst1|synchronizer:b2v_inst6
+clk => q~reg0.CLK
+clk => n1.CLK
+d => n1.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final_project_2|slower:inst1|counter_1Hz:b2v_inst8
+clk => q[0]~reg0.CLK
+clk => q[1]~reg0.CLK
+clk => q[2]~reg0.CLK
+clk => q[3]~reg0.CLK
+clk => q[4]~reg0.CLK
+clk => q[5]~reg0.CLK
+clk => q[6]~reg0.CLK
+clk => q[7]~reg0.CLK
+clk => q[8]~reg0.CLK
+clk => q[9]~reg0.CLK
+clk => q[10]~reg0.CLK
+clk => q[11]~reg0.CLK
+clk => q[12]~reg0.CLK
+clk => q[13]~reg0.CLK
+clk => q[14]~reg0.CLK
+clk => q[15]~reg0.CLK
+clk => q[16]~reg0.CLK
+clk => q[17]~reg0.CLK
+clk => q[18]~reg0.CLK
+clk => q[19]~reg0.CLK
+clk => q[20]~reg0.CLK
+clk => q[21]~reg0.CLK
+clk => q[22]~reg0.CLK
+clk => q[23]~reg0.CLK
+clk => q[24]~reg0.CLK
+reset => q[0]~reg0.ACLR
+reset => q[1]~reg0.ACLR
+reset => q[2]~reg0.ACLR
+reset => q[3]~reg0.ACLR
+reset => q[4]~reg0.ACLR
+reset => q[5]~reg0.ACLR
+reset => q[6]~reg0.ACLR
+reset => q[7]~reg0.ACLR
+reset => q[8]~reg0.ACLR
+reset => q[9]~reg0.ACLR
+reset => q[10]~reg0.ACLR
+reset => q[11]~reg0.ACLR
+reset => q[12]~reg0.ACLR
+reset => q[13]~reg0.ACLR
+reset => q[14]~reg0.ACLR
+reset => q[15]~reg0.ACLR
+reset => q[16]~reg0.ACLR
+reset => q[17]~reg0.ACLR
+reset => q[18]~reg0.ACLR
+reset => q[19]~reg0.ACLR
+reset => q[20]~reg0.ACLR
+reset => q[21]~reg0.ACLR
+reset => q[22]~reg0.ACLR
+reset => q[23]~reg0.ACLR
+reset => q[24]~reg0.ACLR
+q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[8] <= q[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[9] <= q[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[10] <= q[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[11] <= q[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[12] <= q[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[13] <= q[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[14] <= q[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[15] <= q[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[16] <= q[16]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[17] <= q[17]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[18] <= q[18]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[19] <= q[19]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[20] <= q[20]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[21] <= q[21]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[22] <= q[22]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[23] <= q[23]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[24] <= q[24]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final_project_2|lab_4_1:inst
+light[0] <= s_0:inst.pin_s_0
+light[1] <= s_1:inst2.pin_s_1
+light[2] <= s_2:inst1.pin_s_2
+light[3] <= s_3:inst4.s_3
+light[4] <= s_4:inst5.pin_s_4
+light[5] <= s_5:inst6.s_5
+light[6] <= s_6:inst7.pin_s_6
+bus[0] => s_0:inst.pin_D
+bus[0] => s_1:inst2.pin_D
+bus[0] => s_2:inst1.pin_D
+bus[0] => s_3:inst4.D
+bus[0] => s_4:inst5.pin_D
+bus[0] => s_5:inst6.pin_D
+bus[0] => s_6:inst7.pin_D
+bus[1] => s_0:inst.pin_C
+bus[1] => s_1:inst2.pin_C
+bus[1] => s_2:inst1.pin_C
+bus[1] => s_3:inst4.C
+bus[1] => s_4:inst5.pin_C
+bus[1] => s_5:inst6.pin_C
+bus[1] => s_6:inst7.pin_C
+bus[2] => s_0:inst.pin_B
+bus[2] => s_1:inst2.pin_B
+bus[2] => s_2:inst1.pin_B
+bus[2] => s_3:inst4.B
+bus[2] => s_4:inst5.pin_B
+bus[2] => s_5:inst6.pin_B
+bus[2] => s_6:inst7.pin_B
+bus[3] => s_0:inst.pin_A
+bus[3] => s_1:inst2.pin_A
+bus[3] => s_2:inst1.pin_A
+bus[3] => s_3:inst4.A
+bus[3] => s_4:inst5.pin_A
+bus[3] => s_5:inst6.pin_A
+bus[3] => s_6:inst7.pin_A
+
+
+|final_project_2|lab_4_1:inst|s_0:inst
+pin_s_0 <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+pin_A => inst.IN0
+pin_A => inst3.IN0
+pin_A => inst24.IN0
+pin_B => inst.IN1
+pin_B => inst1.IN0
+pin_B => inst27.IN0
+pin_B => inst25.IN0
+pin_C => inst30.IN0
+pin_C => inst28.IN0
+pin_C => inst3.IN2
+pin_C => inst26.IN0
+pin_D => inst29.IN0
+pin_D => inst3.IN3
+pin_D => inst2.IN3
+
+
+|final_project_2|lab_4_1:inst|s_1:inst2
+pin_s_1 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+pin_A => inst.IN0
+pin_A => inst14.IN0
+pin_A => inst4.IN0
+pin_C => inst.IN1
+pin_C => inst15.IN0
+pin_C => inst12.IN0
+pin_C => inst2.IN1
+pin_D => inst.IN2
+pin_D => inst3.IN3
+pin_D => inst10.IN0
+pin_D => inst11.IN0
+pin_B => inst3.IN1
+pin_B => inst4.IN2
+pin_B => inst2.IN0
+
+
+|final_project_2|lab_4_1:inst|s_2:inst1
+pin_s_2 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+pin_A => inst1.IN0
+pin_A => inst9.IN0
+pin_A => inst2.IN0
+pin_B => inst1.IN1
+pin_B => inst10.IN0
+pin_B => inst2.IN1
+pin_C => inst7.IN0
+pin_C => inst.IN2
+pin_C => inst2.IN2
+pin_D => inst8.IN0
+pin_D => inst11.IN0
+
+
+|final_project_2|lab_4_1:inst|s_3:inst4
+s_3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst7.IN0
+A => inst16.IN0
+B => inst17.IN1
+B => inst15.IN0
+B => inst12.IN0
+B => inst10.IN0
+C => inst8.IN0
+C => inst15.IN1
+C => inst13.IN0
+C => inst16.IN2
+D => inst9.IN0
+D => inst15.IN2
+D => inst14.IN2
+D => inst11.IN0
+
+
+|final_project_2|lab_4_1:inst|s_4:inst5
+pin_s_4 <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+pin_B => inst9.IN0
+pin_B => inst.IN1
+pin_C => inst10.IN0
+pin_C => inst8.IN0
+pin_D => inst1.IN2
+pin_D => inst2.IN1
+pin_A => inst6.IN0
+pin_A => inst7.IN0
+
+
+|final_project_2|lab_4_1:inst|s_5:inst6
+s_5 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+pin_A => inst10.IN0
+pin_A => inst14.IN0
+pin_A => inst5.IN0
+pin_A => inst12.IN0
+pin_B => inst11.IN0
+pin_B => inst5.IN1
+pin_B => inst13.IN0
+pin_D => inst2.IN2
+pin_D => inst4.IN2
+pin_C => inst4.IN1
+pin_C => inst15.IN0
+pin_C => inst3.IN2
+
+
+|final_project_2|lab_4_1:inst|s_6:inst7
+pin_s_6 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+pin_A => inst6.IN0
+pin_A => inst9.IN0
+pin_B => inst7.IN0
+pin_B => inst.IN1
+pin_C => inst8.IN0
+pin_C => inst.IN2
+pin_D => inst.IN3
+
+
+|final_project_2|parser:inst2
+a[0] => Mod0.IN11
+a[0] => Div0.IN11
+a[1] => Mod0.IN10
+a[1] => Div0.IN10
+a[2] => Mod0.IN9
+a[2] => Div0.IN9
+a[3] => Mod0.IN8
+a[3] => Div0.IN8
+a[4] => Mod0.IN7
+a[4] => Div0.IN7
+a[5] => Mod0.IN6
+a[5] => Div0.IN6
+a[6] => Mod0.IN5
+a[6] => Div0.IN5
+a[7] => Mod0.IN4
+a[7] => Div0.IN4
+ones[0] <= Mod0.DB_MAX_OUTPUT_PORT_TYPE
+ones[1] <= Mod0.DB_MAX_OUTPUT_PORT_TYPE
+ones[2] <= Mod0.DB_MAX_OUTPUT_PORT_TYPE
+ones[3] <= Mod0.DB_MAX_OUTPUT_PORT_TYPE
+tens[0] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+tens[1] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+tens[2] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+tens[3] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final_project_2|counter:inst3
+clk => q[0]~reg0.CLK
+clk => q[1]~reg0.CLK
+clk => q[2]~reg0.CLK
+clk => q[3]~reg0.CLK
+clk => q[4]~reg0.CLK
+clk => q[5]~reg0.CLK
+clk => q[6]~reg0.CLK
+clk => q[7]~reg0.CLK
+reset => q[0]~reg0.ACLR
+reset => q[1]~reg0.ACLR
+reset => q[2]~reg0.ACLR
+reset => q[3]~reg0.ACLR
+reset => q[4]~reg0.ACLR
+reset => q[5]~reg0.ACLR
+reset => q[6]~reg0.ACLR
+reset => q[7]~reg0.ACLR
+q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final_project_2|synchronizer:inst19
+clk => q~reg0.CLK
+clk => n1.CLK
+d => n1.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final_project_2|comparator:inst6
+a[0] => LessThan0.IN16
+a[1] => LessThan0.IN15
+a[2] => LessThan0.IN14
+a[3] => LessThan0.IN13
+a[4] => LessThan0.IN12
+a[5] => LessThan0.IN11
+a[6] => LessThan0.IN10
+a[7] => LessThan0.IN9
+q <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final_project_2|lab_4_1:inst11
+light[0] <= s_0:inst.pin_s_0
+light[1] <= s_1:inst2.pin_s_1
+light[2] <= s_2:inst1.pin_s_2
+light[3] <= s_3:inst4.s_3
+light[4] <= s_4:inst5.pin_s_4
+light[5] <= s_5:inst6.s_5
+light[6] <= s_6:inst7.pin_s_6
+bus[0] => s_0:inst.pin_D
+bus[0] => s_1:inst2.pin_D
+bus[0] => s_2:inst1.pin_D
+bus[0] => s_3:inst4.D
+bus[0] => s_4:inst5.pin_D
+bus[0] => s_5:inst6.pin_D
+bus[0] => s_6:inst7.pin_D
+bus[1] => s_0:inst.pin_C
+bus[1] => s_1:inst2.pin_C
+bus[1] => s_2:inst1.pin_C
+bus[1] => s_3:inst4.C
+bus[1] => s_4:inst5.pin_C
+bus[1] => s_5:inst6.pin_C
+bus[1] => s_6:inst7.pin_C
+bus[2] => s_0:inst.pin_B
+bus[2] => s_1:inst2.pin_B
+bus[2] => s_2:inst1.pin_B
+bus[2] => s_3:inst4.B
+bus[2] => s_4:inst5.pin_B
+bus[2] => s_5:inst6.pin_B
+bus[2] => s_6:inst7.pin_B
+bus[3] => s_0:inst.pin_A
+bus[3] => s_1:inst2.pin_A
+bus[3] => s_2:inst1.pin_A
+bus[3] => s_3:inst4.A
+bus[3] => s_4:inst5.pin_A
+bus[3] => s_5:inst6.pin_A
+bus[3] => s_6:inst7.pin_A
+
+
+|final_project_2|lab_4_1:inst11|s_0:inst
+pin_s_0 <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+pin_A => inst.IN0
+pin_A => inst3.IN0
+pin_A => inst24.IN0
+pin_B => inst.IN1
+pin_B => inst1.IN0
+pin_B => inst27.IN0
+pin_B => inst25.IN0
+pin_C => inst30.IN0
+pin_C => inst28.IN0
+pin_C => inst3.IN2
+pin_C => inst26.IN0
+pin_D => inst29.IN0
+pin_D => inst3.IN3
+pin_D => inst2.IN3
+
+
+|final_project_2|lab_4_1:inst11|s_1:inst2
+pin_s_1 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+pin_A => inst.IN0
+pin_A => inst14.IN0
+pin_A => inst4.IN0
+pin_C => inst.IN1
+pin_C => inst15.IN0
+pin_C => inst12.IN0
+pin_C => inst2.IN1
+pin_D => inst.IN2
+pin_D => inst3.IN3
+pin_D => inst10.IN0
+pin_D => inst11.IN0
+pin_B => inst3.IN1
+pin_B => inst4.IN2
+pin_B => inst2.IN0
+
+
+|final_project_2|lab_4_1:inst11|s_2:inst1
+pin_s_2 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+pin_A => inst1.IN0
+pin_A => inst9.IN0
+pin_A => inst2.IN0
+pin_B => inst1.IN1
+pin_B => inst10.IN0
+pin_B => inst2.IN1
+pin_C => inst7.IN0
+pin_C => inst.IN2
+pin_C => inst2.IN2
+pin_D => inst8.IN0
+pin_D => inst11.IN0
+
+
+|final_project_2|lab_4_1:inst11|s_3:inst4
+s_3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst7.IN0
+A => inst16.IN0
+B => inst17.IN1
+B => inst15.IN0
+B => inst12.IN0
+B => inst10.IN0
+C => inst8.IN0
+C => inst15.IN1
+C => inst13.IN0
+C => inst16.IN2
+D => inst9.IN0
+D => inst15.IN2
+D => inst14.IN2
+D => inst11.IN0
+
+
+|final_project_2|lab_4_1:inst11|s_4:inst5
+pin_s_4 <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+pin_B => inst9.IN0
+pin_B => inst.IN1
+pin_C => inst10.IN0
+pin_C => inst8.IN0
+pin_D => inst1.IN2
+pin_D => inst2.IN1
+pin_A => inst6.IN0
+pin_A => inst7.IN0
+
+
+|final_project_2|lab_4_1:inst11|s_5:inst6
+s_5 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+pin_A => inst10.IN0
+pin_A => inst14.IN0
+pin_A => inst5.IN0
+pin_A => inst12.IN0
+pin_B => inst11.IN0
+pin_B => inst5.IN1
+pin_B => inst13.IN0
+pin_D => inst2.IN2
+pin_D => inst4.IN2
+pin_C => inst4.IN1
+pin_C => inst15.IN0
+pin_C => inst3.IN2
+
+
+|final_project_2|lab_4_1:inst11|s_6:inst7
+pin_s_6 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+pin_A => inst6.IN0
+pin_A => inst9.IN0
+pin_B => inst7.IN0
+pin_B => inst.IN1
+pin_C => inst8.IN0
+pin_C => inst.IN2
+pin_D => inst.IN3
+
+
+|final_project_2|lab_4_1:inst13
+light[0] <= s_0:inst.pin_s_0
+light[1] <= s_1:inst2.pin_s_1
+light[2] <= s_2:inst1.pin_s_2
+light[3] <= s_3:inst4.s_3
+light[4] <= s_4:inst5.pin_s_4
+light[5] <= s_5:inst6.s_5
+light[6] <= s_6:inst7.pin_s_6
+bus[0] => s_0:inst.pin_D
+bus[0] => s_1:inst2.pin_D
+bus[0] => s_2:inst1.pin_D
+bus[0] => s_3:inst4.D
+bus[0] => s_4:inst5.pin_D
+bus[0] => s_5:inst6.pin_D
+bus[0] => s_6:inst7.pin_D
+bus[1] => s_0:inst.pin_C
+bus[1] => s_1:inst2.pin_C
+bus[1] => s_2:inst1.pin_C
+bus[1] => s_3:inst4.C
+bus[1] => s_4:inst5.pin_C
+bus[1] => s_5:inst6.pin_C
+bus[1] => s_6:inst7.pin_C
+bus[2] => s_0:inst.pin_B
+bus[2] => s_1:inst2.pin_B
+bus[2] => s_2:inst1.pin_B
+bus[2] => s_3:inst4.B
+bus[2] => s_4:inst5.pin_B
+bus[2] => s_5:inst6.pin_B
+bus[2] => s_6:inst7.pin_B
+bus[3] => s_0:inst.pin_A
+bus[3] => s_1:inst2.pin_A
+bus[3] => s_2:inst1.pin_A
+bus[3] => s_3:inst4.A
+bus[3] => s_4:inst5.pin_A
+bus[3] => s_5:inst6.pin_A
+bus[3] => s_6:inst7.pin_A
+
+
+|final_project_2|lab_4_1:inst13|s_0:inst
+pin_s_0 <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+pin_A => inst.IN0
+pin_A => inst3.IN0
+pin_A => inst24.IN0
+pin_B => inst.IN1
+pin_B => inst1.IN0
+pin_B => inst27.IN0
+pin_B => inst25.IN0
+pin_C => inst30.IN0
+pin_C => inst28.IN0
+pin_C => inst3.IN2
+pin_C => inst26.IN0
+pin_D => inst29.IN0
+pin_D => inst3.IN3
+pin_D => inst2.IN3
+
+
+|final_project_2|lab_4_1:inst13|s_1:inst2
+pin_s_1 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+pin_A => inst.IN0
+pin_A => inst14.IN0
+pin_A => inst4.IN0
+pin_C => inst.IN1
+pin_C => inst15.IN0
+pin_C => inst12.IN0
+pin_C => inst2.IN1
+pin_D => inst.IN2
+pin_D => inst3.IN3
+pin_D => inst10.IN0
+pin_D => inst11.IN0
+pin_B => inst3.IN1
+pin_B => inst4.IN2
+pin_B => inst2.IN0
+
+
+|final_project_2|lab_4_1:inst13|s_2:inst1
+pin_s_2 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+pin_A => inst1.IN0
+pin_A => inst9.IN0
+pin_A => inst2.IN0
+pin_B => inst1.IN1
+pin_B => inst10.IN0
+pin_B => inst2.IN1
+pin_C => inst7.IN0
+pin_C => inst.IN2
+pin_C => inst2.IN2
+pin_D => inst8.IN0
+pin_D => inst11.IN0
+
+
+|final_project_2|lab_4_1:inst13|s_3:inst4
+s_3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst7.IN0
+A => inst16.IN0
+B => inst17.IN1
+B => inst15.IN0
+B => inst12.IN0
+B => inst10.IN0
+C => inst8.IN0
+C => inst15.IN1
+C => inst13.IN0
+C => inst16.IN2
+D => inst9.IN0
+D => inst15.IN2
+D => inst14.IN2
+D => inst11.IN0
+
+
+|final_project_2|lab_4_1:inst13|s_4:inst5
+pin_s_4 <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+pin_B => inst9.IN0
+pin_B => inst.IN1
+pin_C => inst10.IN0
+pin_C => inst8.IN0
+pin_D => inst1.IN2
+pin_D => inst2.IN1
+pin_A => inst6.IN0
+pin_A => inst7.IN0
+
+
+|final_project_2|lab_4_1:inst13|s_5:inst6
+s_5 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+pin_A => inst10.IN0
+pin_A => inst14.IN0
+pin_A => inst5.IN0
+pin_A => inst12.IN0
+pin_B => inst11.IN0
+pin_B => inst5.IN1
+pin_B => inst13.IN0
+pin_D => inst2.IN2
+pin_D => inst4.IN2
+pin_C => inst4.IN1
+pin_C => inst15.IN0
+pin_C => inst3.IN2
+
+
+|final_project_2|lab_4_1:inst13|s_6:inst7
+pin_s_6 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+pin_A => inst6.IN0
+pin_A => inst9.IN0
+pin_B => inst7.IN0
+pin_B => inst.IN1
+pin_C => inst8.IN0
+pin_C => inst.IN2
+pin_D => inst.IN3
+
+
+|final_project_2|parser:inst12
+a[0] => Mod0.IN11
+a[0] => Div0.IN11
+a[1] => Mod0.IN10
+a[1] => Div0.IN10
+a[2] => Mod0.IN9
+a[2] => Div0.IN9
+a[3] => Mod0.IN8
+a[3] => Div0.IN8
+a[4] => Mod0.IN7
+a[4] => Div0.IN7
+a[5] => Mod0.IN6
+a[5] => Div0.IN6
+a[6] => Mod0.IN5
+a[6] => Div0.IN5
+a[7] => Mod0.IN4
+a[7] => Div0.IN4
+ones[0] <= Mod0.DB_MAX_OUTPUT_PORT_TYPE
+ones[1] <= Mod0.DB_MAX_OUTPUT_PORT_TYPE
+ones[2] <= Mod0.DB_MAX_OUTPUT_PORT_TYPE
+ones[3] <= Mod0.DB_MAX_OUTPUT_PORT_TYPE
+tens[0] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+tens[1] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+tens[2] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+tens[3] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final_project_2|counter:inst4
+clk => q[0]~reg0.CLK
+clk => q[1]~reg0.CLK
+clk => q[2]~reg0.CLK
+clk => q[3]~reg0.CLK
+clk => q[4]~reg0.CLK
+clk => q[5]~reg0.CLK
+clk => q[6]~reg0.CLK
+clk => q[7]~reg0.CLK
+reset => q[0]~reg0.ACLR
+reset => q[1]~reg0.ACLR
+reset => q[2]~reg0.ACLR
+reset => q[3]~reg0.ACLR
+reset => q[4]~reg0.ACLR
+reset => q[5]~reg0.ACLR
+reset => q[6]~reg0.ACLR
+reset => q[7]~reg0.ACLR
+q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final_project_2|synchronizer:inst18
+clk => q~reg0.CLK
+clk => n1.CLK
+d => n1.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final_project_2|comparator:inst7
+a[0] => LessThan0.IN16
+a[1] => LessThan0.IN15
+a[2] => LessThan0.IN14
+a[3] => LessThan0.IN13
+a[4] => LessThan0.IN12
+a[5] => LessThan0.IN11
+a[6] => LessThan0.IN10
+a[7] => LessThan0.IN9
+q <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final_project_2|lab_4_1:inst14
+light[0] <= s_0:inst.pin_s_0
+light[1] <= s_1:inst2.pin_s_1
+light[2] <= s_2:inst1.pin_s_2
+light[3] <= s_3:inst4.s_3
+light[4] <= s_4:inst5.pin_s_4
+light[5] <= s_5:inst6.s_5
+light[6] <= s_6:inst7.pin_s_6
+bus[0] => s_0:inst.pin_D
+bus[0] => s_1:inst2.pin_D
+bus[0] => s_2:inst1.pin_D
+bus[0] => s_3:inst4.D
+bus[0] => s_4:inst5.pin_D
+bus[0] => s_5:inst6.pin_D
+bus[0] => s_6:inst7.pin_D
+bus[1] => s_0:inst.pin_C
+bus[1] => s_1:inst2.pin_C
+bus[1] => s_2:inst1.pin_C
+bus[1] => s_3:inst4.C
+bus[1] => s_4:inst5.pin_C
+bus[1] => s_5:inst6.pin_C
+bus[1] => s_6:inst7.pin_C
+bus[2] => s_0:inst.pin_B
+bus[2] => s_1:inst2.pin_B
+bus[2] => s_2:inst1.pin_B
+bus[2] => s_3:inst4.B
+bus[2] => s_4:inst5.pin_B
+bus[2] => s_5:inst6.pin_B
+bus[2] => s_6:inst7.pin_B
+bus[3] => s_0:inst.pin_A
+bus[3] => s_1:inst2.pin_A
+bus[3] => s_2:inst1.pin_A
+bus[3] => s_3:inst4.A
+bus[3] => s_4:inst5.pin_A
+bus[3] => s_5:inst6.pin_A
+bus[3] => s_6:inst7.pin_A
+
+
+|final_project_2|lab_4_1:inst14|s_0:inst
+pin_s_0 <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+pin_A => inst.IN0
+pin_A => inst3.IN0
+pin_A => inst24.IN0
+pin_B => inst.IN1
+pin_B => inst1.IN0
+pin_B => inst27.IN0
+pin_B => inst25.IN0
+pin_C => inst30.IN0
+pin_C => inst28.IN0
+pin_C => inst3.IN2
+pin_C => inst26.IN0
+pin_D => inst29.IN0
+pin_D => inst3.IN3
+pin_D => inst2.IN3
+
+
+|final_project_2|lab_4_1:inst14|s_1:inst2
+pin_s_1 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+pin_A => inst.IN0
+pin_A => inst14.IN0
+pin_A => inst4.IN0
+pin_C => inst.IN1
+pin_C => inst15.IN0
+pin_C => inst12.IN0
+pin_C => inst2.IN1
+pin_D => inst.IN2
+pin_D => inst3.IN3
+pin_D => inst10.IN0
+pin_D => inst11.IN0
+pin_B => inst3.IN1
+pin_B => inst4.IN2
+pin_B => inst2.IN0
+
+
+|final_project_2|lab_4_1:inst14|s_2:inst1
+pin_s_2 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+pin_A => inst1.IN0
+pin_A => inst9.IN0
+pin_A => inst2.IN0
+pin_B => inst1.IN1
+pin_B => inst10.IN0
+pin_B => inst2.IN1
+pin_C => inst7.IN0
+pin_C => inst.IN2
+pin_C => inst2.IN2
+pin_D => inst8.IN0
+pin_D => inst11.IN0
+
+
+|final_project_2|lab_4_1:inst14|s_3:inst4
+s_3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst7.IN0
+A => inst16.IN0
+B => inst17.IN1
+B => inst15.IN0
+B => inst12.IN0
+B => inst10.IN0
+C => inst8.IN0
+C => inst15.IN1
+C => inst13.IN0
+C => inst16.IN2
+D => inst9.IN0
+D => inst15.IN2
+D => inst14.IN2
+D => inst11.IN0
+
+
+|final_project_2|lab_4_1:inst14|s_4:inst5
+pin_s_4 <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+pin_B => inst9.IN0
+pin_B => inst.IN1
+pin_C => inst10.IN0
+pin_C => inst8.IN0
+pin_D => inst1.IN2
+pin_D => inst2.IN1
+pin_A => inst6.IN0
+pin_A => inst7.IN0
+
+
+|final_project_2|lab_4_1:inst14|s_5:inst6
+s_5 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+pin_A => inst10.IN0
+pin_A => inst14.IN0
+pin_A => inst5.IN0
+pin_A => inst12.IN0
+pin_B => inst11.IN0
+pin_B => inst5.IN1
+pin_B => inst13.IN0
+pin_D => inst2.IN2
+pin_D => inst4.IN2
+pin_C => inst4.IN1
+pin_C => inst15.IN0
+pin_C => inst3.IN2
+
+
+|final_project_2|lab_4_1:inst14|s_6:inst7
+pin_s_6 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+pin_A => inst6.IN0
+pin_A => inst9.IN0
+pin_B => inst7.IN0
+pin_B => inst.IN1
+pin_C => inst8.IN0
+pin_C => inst.IN2
+pin_D => inst.IN3
+
+
+|final_project_2|lab_4_1:inst20
+light[0] <= s_0:inst.pin_s_0
+light[1] <= s_1:inst2.pin_s_1
+light[2] <= s_2:inst1.pin_s_2
+light[3] <= s_3:inst4.s_3
+light[4] <= s_4:inst5.pin_s_4
+light[5] <= s_5:inst6.s_5
+light[6] <= s_6:inst7.pin_s_6
+bus[0] => s_0:inst.pin_D
+bus[0] => s_1:inst2.pin_D
+bus[0] => s_2:inst1.pin_D
+bus[0] => s_3:inst4.D
+bus[0] => s_4:inst5.pin_D
+bus[0] => s_5:inst6.pin_D
+bus[0] => s_6:inst7.pin_D
+bus[1] => s_0:inst.pin_C
+bus[1] => s_1:inst2.pin_C
+bus[1] => s_2:inst1.pin_C
+bus[1] => s_3:inst4.C
+bus[1] => s_4:inst5.pin_C
+bus[1] => s_5:inst6.pin_C
+bus[1] => s_6:inst7.pin_C
+bus[2] => s_0:inst.pin_B
+bus[2] => s_1:inst2.pin_B
+bus[2] => s_2:inst1.pin_B
+bus[2] => s_3:inst4.B
+bus[2] => s_4:inst5.pin_B
+bus[2] => s_5:inst6.pin_B
+bus[2] => s_6:inst7.pin_B
+bus[3] => s_0:inst.pin_A
+bus[3] => s_1:inst2.pin_A
+bus[3] => s_2:inst1.pin_A
+bus[3] => s_3:inst4.A
+bus[3] => s_4:inst5.pin_A
+bus[3] => s_5:inst6.pin_A
+bus[3] => s_6:inst7.pin_A
+
+
+|final_project_2|lab_4_1:inst20|s_0:inst
+pin_s_0 <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+pin_A => inst.IN0
+pin_A => inst3.IN0
+pin_A => inst24.IN0
+pin_B => inst.IN1
+pin_B => inst1.IN0
+pin_B => inst27.IN0
+pin_B => inst25.IN0
+pin_C => inst30.IN0
+pin_C => inst28.IN0
+pin_C => inst3.IN2
+pin_C => inst26.IN0
+pin_D => inst29.IN0
+pin_D => inst3.IN3
+pin_D => inst2.IN3
+
+
+|final_project_2|lab_4_1:inst20|s_1:inst2
+pin_s_1 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+pin_A => inst.IN0
+pin_A => inst14.IN0
+pin_A => inst4.IN0
+pin_C => inst.IN1
+pin_C => inst15.IN0
+pin_C => inst12.IN0
+pin_C => inst2.IN1
+pin_D => inst.IN2
+pin_D => inst3.IN3
+pin_D => inst10.IN0
+pin_D => inst11.IN0
+pin_B => inst3.IN1
+pin_B => inst4.IN2
+pin_B => inst2.IN0
+
+
+|final_project_2|lab_4_1:inst20|s_2:inst1
+pin_s_2 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+pin_A => inst1.IN0
+pin_A => inst9.IN0
+pin_A => inst2.IN0
+pin_B => inst1.IN1
+pin_B => inst10.IN0
+pin_B => inst2.IN1
+pin_C => inst7.IN0
+pin_C => inst.IN2
+pin_C => inst2.IN2
+pin_D => inst8.IN0
+pin_D => inst11.IN0
+
+
+|final_project_2|lab_4_1:inst20|s_3:inst4
+s_3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst7.IN0
+A => inst16.IN0
+B => inst17.IN1
+B => inst15.IN0
+B => inst12.IN0
+B => inst10.IN0
+C => inst8.IN0
+C => inst15.IN1
+C => inst13.IN0
+C => inst16.IN2
+D => inst9.IN0
+D => inst15.IN2
+D => inst14.IN2
+D => inst11.IN0
+
+
+|final_project_2|lab_4_1:inst20|s_4:inst5
+pin_s_4 <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+pin_B => inst9.IN0
+pin_B => inst.IN1
+pin_C => inst10.IN0
+pin_C => inst8.IN0
+pin_D => inst1.IN2
+pin_D => inst2.IN1
+pin_A => inst6.IN0
+pin_A => inst7.IN0
+
+
+|final_project_2|lab_4_1:inst20|s_5:inst6
+s_5 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+pin_A => inst10.IN0
+pin_A => inst14.IN0
+pin_A => inst5.IN0
+pin_A => inst12.IN0
+pin_B => inst11.IN0
+pin_B => inst5.IN1
+pin_B => inst13.IN0
+pin_D => inst2.IN2
+pin_D => inst4.IN2
+pin_C => inst4.IN1
+pin_C => inst15.IN0
+pin_C => inst3.IN2
+
+
+|final_project_2|lab_4_1:inst20|s_6:inst7
+pin_s_6 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+pin_A => inst6.IN0
+pin_A => inst9.IN0
+pin_B => inst7.IN0
+pin_B => inst.IN1
+pin_C => inst8.IN0
+pin_C => inst.IN2
+pin_D => inst.IN3
+
+
+|final_project_2|parser:inst17
+a[0] => Mod0.IN11
+a[0] => Div0.IN11
+a[1] => Mod0.IN10
+a[1] => Div0.IN10
+a[2] => Mod0.IN9
+a[2] => Div0.IN9
+a[3] => Mod0.IN8
+a[3] => Div0.IN8
+a[4] => Mod0.IN7
+a[4] => Div0.IN7
+a[5] => Mod0.IN6
+a[5] => Div0.IN6
+a[6] => Mod0.IN5
+a[6] => Div0.IN5
+a[7] => Mod0.IN4
+a[7] => Div0.IN4
+ones[0] <= Mod0.DB_MAX_OUTPUT_PORT_TYPE
+ones[1] <= Mod0.DB_MAX_OUTPUT_PORT_TYPE
+ones[2] <= Mod0.DB_MAX_OUTPUT_PORT_TYPE
+ones[3] <= Mod0.DB_MAX_OUTPUT_PORT_TYPE
+tens[0] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+tens[1] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+tens[2] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+tens[3] <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final_project_2|counter:inst16
+clk => q[0]~reg0.CLK
+clk => q[1]~reg0.CLK
+clk => q[2]~reg0.CLK
+clk => q[3]~reg0.CLK
+clk => q[4]~reg0.CLK
+clk => q[5]~reg0.CLK
+clk => q[6]~reg0.CLK
+clk => q[7]~reg0.CLK
+reset => q[0]~reg0.ACLR
+reset => q[1]~reg0.ACLR
+reset => q[2]~reg0.ACLR
+reset => q[3]~reg0.ACLR
+reset => q[4]~reg0.ACLR
+reset => q[5]~reg0.ACLR
+reset => q[6]~reg0.ACLR
+reset => q[7]~reg0.ACLR
+q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final_project_2|synchronizer:inst15
+clk => q~reg0.CLK
+clk => n1.CLK
+d => n1.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final_project_2|comparator_24:inst22
+a[0] => LessThan0.IN16
+a[1] => LessThan0.IN15
+a[2] => LessThan0.IN14
+a[3] => LessThan0.IN13
+a[4] => LessThan0.IN12
+a[5] => LessThan0.IN11
+a[6] => LessThan0.IN10
+a[7] => LessThan0.IN9
+q <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final_project_2|lab_4_1:inst21
+light[0] <= s_0:inst.pin_s_0
+light[1] <= s_1:inst2.pin_s_1
+light[2] <= s_2:inst1.pin_s_2
+light[3] <= s_3:inst4.s_3
+light[4] <= s_4:inst5.pin_s_4
+light[5] <= s_5:inst6.s_5
+light[6] <= s_6:inst7.pin_s_6
+bus[0] => s_0:inst.pin_D
+bus[0] => s_1:inst2.pin_D
+bus[0] => s_2:inst1.pin_D
+bus[0] => s_3:inst4.D
+bus[0] => s_4:inst5.pin_D
+bus[0] => s_5:inst6.pin_D
+bus[0] => s_6:inst7.pin_D
+bus[1] => s_0:inst.pin_C
+bus[1] => s_1:inst2.pin_C
+bus[1] => s_2:inst1.pin_C
+bus[1] => s_3:inst4.C
+bus[1] => s_4:inst5.pin_C
+bus[1] => s_5:inst6.pin_C
+bus[1] => s_6:inst7.pin_C
+bus[2] => s_0:inst.pin_B
+bus[2] => s_1:inst2.pin_B
+bus[2] => s_2:inst1.pin_B
+bus[2] => s_3:inst4.B
+bus[2] => s_4:inst5.pin_B
+bus[2] => s_5:inst6.pin_B
+bus[2] => s_6:inst7.pin_B
+bus[3] => s_0:inst.pin_A
+bus[3] => s_1:inst2.pin_A
+bus[3] => s_2:inst1.pin_A
+bus[3] => s_3:inst4.A
+bus[3] => s_4:inst5.pin_A
+bus[3] => s_5:inst6.pin_A
+bus[3] => s_6:inst7.pin_A
+
+
+|final_project_2|lab_4_1:inst21|s_0:inst
+pin_s_0 <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+pin_A => inst.IN0
+pin_A => inst3.IN0
+pin_A => inst24.IN0
+pin_B => inst.IN1
+pin_B => inst1.IN0
+pin_B => inst27.IN0
+pin_B => inst25.IN0
+pin_C => inst30.IN0
+pin_C => inst28.IN0
+pin_C => inst3.IN2
+pin_C => inst26.IN0
+pin_D => inst29.IN0
+pin_D => inst3.IN3
+pin_D => inst2.IN3
+
+
+|final_project_2|lab_4_1:inst21|s_1:inst2
+pin_s_1 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+pin_A => inst.IN0
+pin_A => inst14.IN0
+pin_A => inst4.IN0
+pin_C => inst.IN1
+pin_C => inst15.IN0
+pin_C => inst12.IN0
+pin_C => inst2.IN1
+pin_D => inst.IN2
+pin_D => inst3.IN3
+pin_D => inst10.IN0
+pin_D => inst11.IN0
+pin_B => inst3.IN1
+pin_B => inst4.IN2
+pin_B => inst2.IN0
+
+
+|final_project_2|lab_4_1:inst21|s_2:inst1
+pin_s_2 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+pin_A => inst1.IN0
+pin_A => inst9.IN0
+pin_A => inst2.IN0
+pin_B => inst1.IN1
+pin_B => inst10.IN0
+pin_B => inst2.IN1
+pin_C => inst7.IN0
+pin_C => inst.IN2
+pin_C => inst2.IN2
+pin_D => inst8.IN0
+pin_D => inst11.IN0
+
+
+|final_project_2|lab_4_1:inst21|s_3:inst4
+s_3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst7.IN0
+A => inst16.IN0
+B => inst17.IN1
+B => inst15.IN0
+B => inst12.IN0
+B => inst10.IN0
+C => inst8.IN0
+C => inst15.IN1
+C => inst13.IN0
+C => inst16.IN2
+D => inst9.IN0
+D => inst15.IN2
+D => inst14.IN2
+D => inst11.IN0
+
+
+|final_project_2|lab_4_1:inst21|s_4:inst5
+pin_s_4 <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+pin_B => inst9.IN0
+pin_B => inst.IN1
+pin_C => inst10.IN0
+pin_C => inst8.IN0
+pin_D => inst1.IN2
+pin_D => inst2.IN1
+pin_A => inst6.IN0
+pin_A => inst7.IN0
+
+
+|final_project_2|lab_4_1:inst21|s_5:inst6
+s_5 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+pin_A => inst10.IN0
+pin_A => inst14.IN0
+pin_A => inst5.IN0
+pin_A => inst12.IN0
+pin_B => inst11.IN0
+pin_B => inst5.IN1
+pin_B => inst13.IN0
+pin_D => inst2.IN2
+pin_D => inst4.IN2
+pin_C => inst4.IN1
+pin_C => inst15.IN0
+pin_C => inst3.IN2
+
+
+|final_project_2|lab_4_1:inst21|s_6:inst7
+pin_s_6 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+pin_A => inst6.IN0
+pin_A => inst9.IN0
+pin_B => inst7.IN0
+pin_B => inst.IN1
+pin_C => inst8.IN0
+pin_C => inst.IN2
+pin_D => inst.IN3
+
+
