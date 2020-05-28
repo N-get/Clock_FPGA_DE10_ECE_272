@@ -103,4 +103,7 @@ set_location_assignment PIN_B17 -to light_2[6]
 set_location_assignment PIN_N5 -to clock_10MHZ
 set_location_assignment PIN_P11 -to clock_50
 set_location_assignment PIN_C10 -to reset
+set_global_assignment -name SYSTEMVERILOG_FILE keyboard.sv
+set_global_assignment -name SYSTEMVERILOG_FILE conuter_controller.sv
+set_global_assignment -name SYSTEMVERILOG_FILE keyboard_decoder.sv
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

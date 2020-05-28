@@ -1,0 +1,23 @@
+module keyboard_decoder(input logic [9:0] clk,
+						input logic wire1,
+						output logic [9:0]num,
+						output logic reset,
+						output logic c,
+						output logic a);
+
+			assign num[0] = (wire1 == 1 && clk > 5 && clk < 15);
+			assign num[1] = (wire1 == 1 && clk > 16 && clk < 25);
+			assign num[2] = (wire1 == 1 && clk > 26 && clk < 35);
+			assign num[3] = (wire1 == 1 && clk > 36 && clk < 45);
+			assign num[4] = (wire1 == 1 && clk > 46 && clk < 55);
+			assign num[5] = (wire1 == 1 && clk > 56 && clk < 65);
+			assign num[6] = (wire1 == 1 && clk > 66 && clk < 75);
+			assign num[7] = (wire1 == 1 && clk > 76 && clk < 85);
+			assign num[8] = (wire1 == 1 && clk > 86 && clk < 95);
+			assign num[9] = (wire1 == 1 && clk > 96 && clk < 105);		
+			assign enter = (wire1 == 1 && clk > 106 && clk < 115);//next num
+			assign c = (wire1 == 1 && clk > 116 && clk < 125);//set alarm
+			assign a = (wire1 == 1 && clk > 126 && clk < 135);
+			assign reset = (wire1 == 1 && clk >150 && clk < 200);
+			
+endmodule  

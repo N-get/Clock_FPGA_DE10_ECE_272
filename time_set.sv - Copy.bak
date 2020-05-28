@@ -1,8 +1,0 @@
-module time_set(input logic [3:0] a, b,
-					output logic [7:0] out);
-					
-					
-					assign a = a *10;
-					assign out = a+b;
-					
-endmodule 

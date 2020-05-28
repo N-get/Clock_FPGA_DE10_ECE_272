@@ -1,0 +1,14 @@
+module controller(input logic [3:0] D_pad,clK, count,
+						output logic signal);
+		if( count > 5 && count < 10)
+			assign signal = [0]D_pad;
+		else if(count > 11 && count < 16)
+			assign signal = [1]D_pad;
+		else if(count > 21 && count < 26)
+			assign signal = [2]D_pad;
+		else if(count > 31 && count < 36)
+			assign signal = [3]D_pad;
+		
+		assign reset = (count > 40);
+		
+endmodule  
